@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lägg till Todo</title>
+    <script src="src/main.ts" type="module"></script>
+</head>
+<body>
+    <header>  
+        <nav class="desktopmenu"> <!--Desktopmenyn-->
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="addtodo.html">Lägg till Todo</a></li>
+            </ul>
+        </nav> 
+    
+            <button class="menu-btn open" id="open-menu"> <!--Knapp för att toggle fram hamburgermenyn-->
+                    <span class="menu-icon">
+                        <span class="bars"></span>
+                        <span class="bars"></span>
+                        <span class="bars"></span>
+                    </span>
+                    <span class="menu-text">Meny</span>
+            </button>
+
+        <nav class="mobilemenu" id="mobilemenu"> <!--Hamburgermeny för mobila enheter med en knapp för att stänga ner den-->
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">Stäng meny</span>
+            </button>
+            <ul>
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="addtodo.html">Lägg till Todo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="formcontainer">
+        <form class="form">
+            <label for="name">Todo:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="code">Priority:</label>
+            <input type="text" id="priority" name="priority" required>
+            <br>
+            <input type="button" id="button" value="Bekräfta">
+        </form>
+    </div>
+</body>
+</html>
